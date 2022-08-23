@@ -1,11 +1,12 @@
-
-
-import MainRoutes from './MainRoutes';
-import './App.css';
+import MenuBar from "./components/MenuBar";
+import MainRoutes from "./MainRoutes";
 
 function App() {
   return (
-    <MainRoutes/>
+    <>
+      <MainRoutes />
+      <MenuBar />
+    </>
   );
 }
 

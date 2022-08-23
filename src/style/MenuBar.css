@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.css-12i7wg6-MuiPaper-root-MuiDrawer-paper {
+    border: none !important;
+}
+
+.css-6iz4mj-MuiButtonBase-root-MuiIconButton-root {
+    margin-right: 70% !important;
+}
+
+.css-hyum1k-MuiToolbar-root {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hover-cline-text:hover {
+    color: white;
+}
