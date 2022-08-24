@@ -19,15 +19,33 @@ import DiamondIcon from "@mui/icons-material/Diamond";
 import PrivacyTipIcon from "@mui/icons-material/PrivacyTip";
 import SpotifyIconMenu from "../assets/icons/SpotifyIconMenu.svg";
 import "../style/MenuBar.css";
+import AccountCircle from "@mui/icons-material/AccountCircle";
+import MenuItem from "@mui/material/MenuItem";
+import Menu from "@mui/material/Menu";
+import { Button } from "@mui/material";
 
 const drawerWidth = 240;
-
 function MenuBar(props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
+  };
+
+  const [auth, setAuth] = React.useState(true);
+  const [anchorEl, setAnchorEl] = React.useState(null);
+
+  const handleChange = (event) => {
+    setAuth(event.target.checked);
+  };
+
+  const handleMenu = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
   };
 
   const menuIcon = {
@@ -44,6 +62,15 @@ function MenuBar(props) {
     fontSize: "0.875rem",
     fontWeight: "700",
   };
+
+  const accountIcon ={
+    borderRadius: "38px",
+    backgroundColor: "rgba(0,0,0,.98)",
+    color: "white",
+    width: "10vw",
+    display: "flex",
+    justifyContent: "flex-start"
+  }
 
   const drawer = (
     <div style={backColor}>
@@ -99,10 +126,11 @@ function MenuBar(props) {
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
       <AppBar
+      className="navbar-all-back"
         position="fixed"
         sx={{
           width: { sm: `calc(100% - ${drawerWidth}px)` },
-          ml: { sm: `${drawerWidth}px`, background: "#121212" },
+          ml: { sm: `${drawerWidth}px`, background: "none", border: "none" },
         }}
       >
         <Toolbar>
@@ -115,26 +143,42 @@ function MenuBar(props) {
           >
             <MenuIcon />
           </IconButton>
-          <Typography
-            component="div"
-            sx={{ mr: "2.5%", color: "#a7a7a7", fontWeight: "700" }}
-            className="hover-cline-text"
-          >
-            Sign Up
-          </Typography>
-          <Typography
-            component="div"
-            sx={{
-              fontWeight: "700",
-              border: "1px solid white",
-              borderRadius: "40px",
-              padding: "1% 3% 1% 3%",
-              background: "white",
-              color: "black"
-            }}
-          >
-            Log In
-          </Typography>
+          <div className="auth-all">
+            {auth && (
+              <div>
+                <IconButton
+                  size="large"
+                  aria-label="account of current user"
+                  aria-controls="menu-appbar"
+                  aria-haspopup="true"
+                  onClick={handleMenu}
+                  color="inherit"
+                >
+                  <button style={accountIcon}>
+                    <AccountCircle sx={{ width: 40, height: 40 }} />
+                  </button>
+                </IconButton>
+                <Menu
+                  id="menu-appbar"
+                  anchorEl={anchorEl}
+                  anchorOrigin={{
+                    vertical: "top",
+                    horizontal: "right",
+                  }}
+                  keepMounted
+                  transformOrigin={{
+                    vertical: "top",
+                    horizontal: "right",
+                  }}
+                  open={Boolean(anchorEl)}
+                  onClose={handleClose}
+                >
+                  <MenuItem onClick={handleClose}>Profile</MenuItem>
+                  <MenuItem onClick={handleClose}>My account</MenuItem>
+                </Menu>
+              </div>
+            )}
+          </div>
         </Toolbar>
       </AppBar>
       <Box
