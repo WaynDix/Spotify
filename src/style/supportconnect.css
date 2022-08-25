@@ -1,0 +1,13 @@
+.sup-con-all {
+  display: flex;
+  justify-content: center;
+}
+.con-all {
+  margin-top: 32px;
+  padding: 24px 16px;
+  border-radius: 8px;
+  background: var(--background-tinted-base, rgba(77, 77, 77, 0.368));
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,129 @@
+.wuzee-nav {
+    background: rgb(18,18,18);
+    background: linear-gradient(0deg, rgba(18,18,18,1) 10%, rgba(32,176,60,0.7) 350%);
+}
+
+.imgIconW {
+    margin: 2% 0 0 15%;
+    opacity: 40%;
+}
+
+.text-sup {
+  display: flex;
+  margin-left: 31%;
+  align-items: center;
+  margin-top: 4%;
+  color: #a7a7a7;
+  font-size: 1.125rem;
+  padding-block-end: 16px;
+}
+
+.text-sup2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4.5rem;
+  font-weight: 900;
+  color: #fff;
+  padding-block-end: 30px;
+}
+
+.category-sup {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+
+.category-all {
+  display: flex;
+  flex-wrap: wrap;
+  width: 45%;
+  justify-content: space-around;
+  align-items: center;
+  height: 33vh;
+  cursor: pointer;
+}
+
+.pay-sup {
+  height: 92px;
+  width: 200px;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(175, 40, 150);
+}
+
+.img-sup-ni {
+  position: absolute;
+  top: 50px;
+  box-shadow: rgb(0 0 0 / 20%) 0px 2px 4px 0px;
+  right: calc(100% - 64px + 19px);
+  left: calc(100% - 64px + 19px);
+  transform: rotate(25deg);
+}
+
+.sub {
+  background-color: rgb(160, 139, 156);
+}
+
+.app {
+  background-color: #ffa42b;
+}
+
+.device {
+  background-color: rgb(0, 100, 80);
+}
+
+.security {
+  background-color: rgb(117, 117, 117);
+}
+
+.acchelp {
+  background-color: rgb(83, 122, 161);
+}
+
+.text-sup-all {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  margin-block: 0px;
+  font-size: 1.125rem;
+  font-weight: 700;
+  font-family: var(
+    --font-family,
+    CircularSp,
+    CircularSp-Arab,
+    CircularSp-Hebr,
+    CircularSp-Cyrl,
+    CircularSp-Grek,
+    CircularSp-Deva,
+    var(--fallback-fonts, sans-serif)
+  );
+  color: inherit;
+  color: #fff;
+}
+
+.text-all-sup-card {
+  padding: 12px;
+  position: relative;
+  padding-inline-end: 56px;
+  z-index: 22;
+}
+
+@media screen and (max-width: 1428px) {
+  .category-all {
+    width: 30%;
+    justify-content: space-around;
+    height: 40vh;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 1332px) {
+  .category-all {
+    width: 30%;
+    justify-content: space-around;
+    height: 80vh;
+    cursor: pointer;
+  }
+}

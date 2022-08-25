@@ -1,8 +1,9 @@
 import React from 'react'
+import MenuBar from '../components/MenuBar'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <div><MenuBar /></div>
   )
 }
 

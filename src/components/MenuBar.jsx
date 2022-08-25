@@ -10,7 +10,6 @@ import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
 import HomeIcon from "@mui/icons-material/Home";
 import SearchIcon from "@mui/icons-material/Search";
 import AddBoxIcon from "@mui/icons-material/AddBox";
@@ -22,7 +21,7 @@ import "../style/MenuBar.css";
 import AccountCircle from "@mui/icons-material/AccountCircle";
 import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
-import { Button } from "@mui/material";
+import { useNavigate } from 'react-router-dom';
 
 const drawerWidth = 240;
 function MenuBar(props) {
@@ -72,6 +71,8 @@ function MenuBar(props) {
     justifyContent: "flex-start"
   }
 
+  const navigate = useNavigate();
+
   const drawer = (
     <div style={backColor}>
       <img
@@ -98,8 +99,8 @@ function MenuBar(props) {
           </ListItemButton>
         </ListItem>
         <ListItem disablePadding>
-          <ListItemButton className="hover-cline-text">
-            <PrivacyTipIcon sx={menuIcon} className="hover-cline-text" />{" "}
+          <ListItemButton className="hover-cline-text" onClick={() => navigate("/support")}>
+            <PrivacyTipIcon sx={menuIcon} className="hover-cline-text" />
             Support
           </ListItemButton>
         </ListItem>
@@ -153,10 +154,9 @@ function MenuBar(props) {
                   aria-haspopup="true"
                   onClick={handleMenu}
                   color="inherit"
+                  sx={accountIcon}
                 >
-                  <button style={accountIcon}>
                     <AccountCircle sx={{ width: 40, height: 40 }} />
-                  </button>
                 </IconButton>
                 <Menu
                   id="menu-appbar"
