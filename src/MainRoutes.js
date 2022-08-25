@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import Regestration from './pages/Regestration'
+import Regestration from './pages/Registration'
 import Home from './pages/Home'
 
 const MainRoutes = () => {

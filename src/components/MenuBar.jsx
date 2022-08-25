@@ -63,14 +63,14 @@ function MenuBar(props) {
     fontWeight: "700",
   };
 
-  const accountIcon ={
+  const accountIcon = {
     borderRadius: "38px",
     backgroundColor: "rgba(0,0,0,.98)",
     color: "white",
     width: "10vw",
     display: "flex",
-    justifyContent: "flex-start"
-  }
+    justifyContent: "flex-start",
+  };
 
   const drawer = (
     <div style={backColor}>
@@ -123,10 +123,10 @@ function MenuBar(props) {
     window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{ display: "flex" }}>
+    <Box className="sideBar" sx={{ display: "flex" }}>
       <CssBaseline />
       <AppBar
-      className="navbar-all-back"
+        className="navbar-all-back"
         position="fixed"
         sx={{
           width: { sm: `calc(100% - ${drawerWidth}px)` },
@@ -145,18 +145,17 @@ function MenuBar(props) {
           </IconButton>
           <div className="auth-all">
             {auth && (
-              <div>
+              <div className="icon__auth">
                 <IconButton
-                  size="large"
+                  // size="large"
                   aria-label="account of current user"
                   aria-controls="menu-appbar"
                   aria-haspopup="true"
                   onClick={handleMenu}
                   color="inherit"
+                  sx={accountIcon}
                 >
-                  <button style={accountIcon}>
-                    <AccountCircle sx={{ width: 40, height: 40 }} />
-                  </button>
+                  <AccountCircle sx={{ width: 35, height: 35 }} />
                 </IconButton>
                 <Menu
                   id="menu-appbar"
@@ -173,8 +172,9 @@ function MenuBar(props) {
                   open={Boolean(anchorEl)}
                   onClose={handleClose}
                 >
-                  <MenuItem onClick={handleClose}>Profile</MenuItem>
-                  <MenuItem onClick={handleClose}>My account</MenuItem>
+                  {/* <MenuItem onClick={handleClose}>Profile</MenuItem> */}
+                  {/* <MenuItem onClick={handleClose}>My account</MenuItem> */}
+                  <MenuItem onClick={handleClose}>Log out</MenuItem>
                 </Menu>
               </div>
             )}
