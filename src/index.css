@@ -4,3 +4,77 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+
+.albums {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  padding-left: 17vw;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* justify-content: center; */
+}
+
+.album {
+  width: 15vw;
+  height: 20vw;
+  color: white;
+  /* border: 1px solid white; */
+  background-color: rgb(21, 21, 21);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+
+.album__inner button{
+  display: none;
+  width: 50px;
+  height: 50px;
+  color: rgb(0, 255, 0);
+  border: 1px solid white;
+  border-radius: 25px;
+  margin-right: 0.8vw;
+  cursor: pointer;
+  transition: 1s;
+}
+
+
+
+.album:hover .album__inner button{
+  display: block;
+  background-color: rgb(33, 33, 33);
+  transition: 1.5s;
+}
+
+
+.btn{
+  width: 100%;
+  background-color: aqua;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+
+
+.album__inner {
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; */
+}
+
+
+.album__inner p{
+  /* padding: 0.2vw; */
+  font-size: 20px;
+  padding-left: 0.8vw;
+}
+
+
+.album__inner img {
+  width: 100%;
+  height: 12vw;
+  padding: 0.7vw;
+  border-radius: 15px;
+}
