@@ -10,7 +10,6 @@ const Album = () => {
           <p>Lose you'r self</p>
           <p>Eminem</p>
           <div className="btn">
-            
             <button>PLAY</button>
           </div>
         </div>
@@ -21,6 +20,9 @@ const Album = () => {
           <img src={iminem} alt="" />
           <p>Lose you'r self</p>
           <p>Eminem</p>
+          <div className="btn">
+            <button>PLAY</button>
+          </div>
         </div>
       </div>
 
@@ -29,6 +31,9 @@ const Album = () => {
           <img src={iminem} alt="" />
           <p>Lose you'r self</p>
           <p>Eminem</p>
+          <div className="btn">
+            <button>PLAY</button>
+          </div>
         </div>
       </div>
 
@@ -37,6 +42,9 @@ const Album = () => {
           <img src={iminem} alt="" />
           <p>Lose you'r self</p>
           <p>Eminem</p>
+          <div className="btn">
+            <button>PLAY</button>
+          </div>
         </div>
       </div>
 
@@ -45,6 +53,9 @@ const Album = () => {
           <img src={iminem} alt="" />
           <p>Lose you'r self</p>
           <p>Eminem</p>
+          <div className="btn">
+            <button>PLAY</button>
+          </div>
         </div>
       </div>
 
@@ -53,6 +64,9 @@ const Album = () => {
           <img src={iminem} alt="" />
           <p>Lose you'r self</p>
           <p>Eminem</p>
+          <div className="btn">
+            <button>PLAY</button>
+          </div>
         </div>
       </div>
 
@@ -61,6 +75,9 @@ const Album = () => {
           <img src={iminem} alt="" />
           <p>Lose you'r self</p>
           <p>Eminem</p>
+          <div className="btn">
+            <button>PLAY</button>
+          </div>
         </div>
       </div>
 
@@ -69,6 +86,9 @@ const Album = () => {
           <img src={iminem} alt="" />
           <p>Lose you'r self</p>
           <p>Eminem</p>
+          <div className="btn">
+            <button>PLAY</button>
+          </div>
         </div>
       </div>
 
@@ -77,6 +97,9 @@ const Album = () => {
           <img src={iminem} alt="" />
           <p>Lose you'r self</p>
           <p>Eminem</p>
+          <div className="btn">
+            <button>PLAY</button>
+          </div>
         </div>
       </div>
 
@@ -85,6 +108,20 @@ const Album = () => {
           <img src={iminem} alt="" />
           <p>Lose you'r self</p>
           <p>Eminem</p>
+          <div className="btn">
+            <button>PLAY</button>
+          </div>
+        </div>
+      </div>
+
+      <div className="album">
+        <div className="album__inner">
+          <img src={iminem} alt="" />
+          <p>Lose you'r self</p>
+          <p>Eminem</p>
+          <div className="btn">
+            <button>PLAY</button>
+          </div>
         </div>
       </div>
     </div>

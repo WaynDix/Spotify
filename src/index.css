@@ -42,15 +42,26 @@ body {
 
 
 .album:hover .album__inner button{
-  display: block;
+  display:block;
   background-color: rgb(33, 33, 33);
   transition: 1.5s;
 }
 
 
-.btn{
+.album:hover{
+  background-color: black;
+}
+
+.btns{
   width: 100%;
-  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.btn{
+  width: auto;
   display: flex;
   flex-direction: row-reverse;
 }
@@ -77,4 +88,16 @@ body {
   height: 12vw;
   padding: 0.7vw;
   border-radius: 15px;
+}
+
+
+
+
+.musics{
+  width: 100%;
+  height: auto;
+  border: 1px solid white;
+  padding-left: 17vw;
+  color: white;
+  
 }
