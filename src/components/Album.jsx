@@ -4,6 +4,7 @@ import "../style/albums.css";
 import MenuBar from "./MenuBar";
 
 const Album = () => {
+
   const navigate = useNavigate();
 
   return (
@@ -17,6 +18,7 @@ const Album = () => {
         <div className="name-albums">internet rewind</div>
         <div className="decr-album">
           Viral classics. Yep, we're at that stage.
+
         </div>
       </div>
     </div>
