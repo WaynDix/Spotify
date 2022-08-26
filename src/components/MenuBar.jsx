@@ -10,7 +10,6 @@ import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
 import HomeIcon from "@mui/icons-material/Home";
 import SearchIcon from "@mui/icons-material/Search";
 import AddBoxIcon from "@mui/icons-material/AddBox";
@@ -22,7 +21,7 @@ import "../style/MenuBar.css";
 import AccountCircle from "@mui/icons-material/AccountCircle";
 import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
-import { Button } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
 const drawerWidth = 240;
 function MenuBar(props) {
@@ -72,6 +71,8 @@ function MenuBar(props) {
     justifyContent: "flex-start",
   };
 
+  const navigate = useNavigate();
+
   const drawer = (
     <div style={backColor}>
       <img
@@ -80,6 +81,7 @@ function MenuBar(props) {
         width={170}
         height={90}
         style={{ cursor: "pointer" }}
+        onClick={() => navigate("/")}
       />
       <List>
         <ListItem disablePadding>
@@ -98,8 +100,11 @@ function MenuBar(props) {
           </ListItemButton>
         </ListItem>
         <ListItem disablePadding>
-          <ListItemButton className="hover-cline-text">
-            <PrivacyTipIcon sx={menuIcon} className="hover-cline-text" />{" "}
+          <ListItemButton
+            className="hover-cline-text"
+            onClick={() => navigate("/support")}
+          >
+            <PrivacyTipIcon sx={menuIcon} className="hover-cline-text" />
             Support
           </ListItemButton>
         </ListItem>
@@ -147,7 +152,6 @@ function MenuBar(props) {
             {auth && (
               <div className="icon__auth">
                 <IconButton
-                  // size="large"
                   aria-label="account of current user"
                   aria-controls="menu-appbar"
                   aria-haspopup="true"
@@ -155,7 +159,7 @@ function MenuBar(props) {
                   color="inherit"
                   sx={accountIcon}
                 >
-                  <AccountCircle sx={{ width: 35, height: 35 }} />
+                  <AccountCircle sx={{ width: 40, height: 40 }} />
                 </IconButton>
                 <Menu
                   id="menu-appbar"
@@ -172,8 +176,6 @@ function MenuBar(props) {
                   open={Boolean(anchorEl)}
                   onClose={handleClose}
                 >
-                  {/* <MenuItem onClick={handleClose}>Profile</MenuItem> */}
-                  {/* <MenuItem onClick={handleClose}>My account</MenuItem> */}
                   <MenuItem onClick={handleClose}>Log out</MenuItem>
                 </Menu>
               </div>

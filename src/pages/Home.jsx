@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import MenuBar from "../components/MenuBar";
+import Album from "../components/Album";
 
 const Home = () => {
   return (
-    <div>Home</div>
-  )
-}
+    <div>
+      <MenuBar />
+      <Album />
+    </div>
+  );
+};
 
-export default Home
+export default Home;
