@@ -21,7 +21,7 @@ import "../style/MenuBar.css";
 import AccountCircle from "@mui/icons-material/AccountCircle";
 import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 const drawerWidth = 240;
 function MenuBar(props) {
@@ -62,14 +62,14 @@ function MenuBar(props) {
     fontWeight: "700",
   };
 
-  const accountIcon ={
+  const accountIcon = {
     borderRadius: "38px",
     backgroundColor: "rgba(0,0,0,.98)",
     color: "white",
     width: "10vw",
     display: "flex",
-    justifyContent: "flex-start"
-  }
+    justifyContent: "flex-start",
+  };
 
   const navigate = useNavigate();
 
@@ -81,6 +81,7 @@ function MenuBar(props) {
         width={170}
         height={90}
         style={{ cursor: "pointer" }}
+        onClick={() => navigate("/")}
       />
       <List>
         <ListItem disablePadding>
@@ -99,7 +100,10 @@ function MenuBar(props) {
           </ListItemButton>
         </ListItem>
         <ListItem disablePadding>
-          <ListItemButton className="hover-cline-text" onClick={() => navigate("/support")}>
+          <ListItemButton
+            className="hover-cline-text"
+            onClick={() => navigate("/support")}
+          >
             <PrivacyTipIcon sx={menuIcon} className="hover-cline-text" />
             Support
           </ListItemButton>
@@ -124,10 +128,10 @@ function MenuBar(props) {
     window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{ display: "flex" }}>
+    <Box className="sideBar" sx={{ display: "flex" }}>
       <CssBaseline />
       <AppBar
-      className="navbar-all-back"
+        className="navbar-all-back"
         position="fixed"
         sx={{
           width: { sm: `calc(100% - ${drawerWidth}px)` },
@@ -146,9 +150,8 @@ function MenuBar(props) {
           </IconButton>
           <div className="auth-all">
             {auth && (
-              <div>
+              <div className="icon__auth">
                 <IconButton
-                  size="large"
                   aria-label="account of current user"
                   aria-controls="menu-appbar"
                   aria-haspopup="true"
@@ -156,7 +159,7 @@ function MenuBar(props) {
                   color="inherit"
                   sx={accountIcon}
                 >
-                    <AccountCircle sx={{ width: 40, height: 40 }} />
+                  <AccountCircle sx={{ width: 40, height: 40 }} />
                 </IconButton>
                 <Menu
                   id="menu-appbar"
@@ -173,8 +176,7 @@ function MenuBar(props) {
                   open={Boolean(anchorEl)}
                   onClose={handleClose}
                 >
-                  <MenuItem onClick={handleClose}>Profile</MenuItem>
-                  <MenuItem onClick={handleClose}>My account</MenuItem>
+                  <MenuItem onClick={handleClose}>Log out</MenuItem>
                 </Menu>
               </div>
             )}

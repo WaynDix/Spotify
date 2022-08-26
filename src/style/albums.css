@@ -1,0 +1,52 @@
+.card-all {
+  background-color: #21212181;
+  width: 12%;
+  margin-left: 20vw;
+  border-radius: 12px;
+  padding: 1% 1% 1% 1%;
+}
+
+.img-icon {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.all-decr {
+  padding: 5% 0 1% 2%;
+  width: 100%;
+}
+
+.name-albums {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  margin-block: 0px;
+  font-size: 1rem;
+  font-weight: 700;
+  padding-block-end: 4px;
+  color: #fff;
+  width: 20vw;
+}
+
+.decr-album {
+  width: 11vw;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  margin-block: 0px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #6a6a6a;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  margin-top: 4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  white-space: normal;
+}
+
+.card-all:hover {
+  background-color: #27272781;
+  box-shadow: 0 5px 20px #21212181;
+}
