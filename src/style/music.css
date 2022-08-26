@@ -1,0 +1,63 @@
+.razmetka {
+  margin-left: 17vw;
+  color: white;
+  display: flex;
+  width: 80%;
+}
+
+#number {
+  width: 2vw;
+  display: flex;
+  justify-content: center;
+}
+
+#name {
+  width: auto;
+}
+
+#alb {
+  width: auto;
+  padding-left: 20vw;
+}
+
+.musics {
+  display: flex;
+  margin-left: 17vw;
+  color: white;
+  width: 80%;
+  flex-direction: column;
+}
+
+.music {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  transition: 0.4s;
+}
+
+.music:hover{
+    background-color: rgb(19, 86, 0);
+}
+
+.mus__photo {
+  width: 40px;
+  height: 40px;
+}
+
+#alb2 {
+  width: auto;
+  padding-left: 19.5vw;
+}
+
+.names__of__song {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+}
+
+.sub__name {
+  font-size: 10px;
+  color: rgb(147, 147, 147);
+}
