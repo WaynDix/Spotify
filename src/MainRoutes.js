@@ -7,6 +7,7 @@ import SupportConnect from './components/SupportConnect'
 import Premium from './components/Premium'
 import Pay from './components/Pay'
 import MusicsList from './components/MusicsList'
+import Player from './components/Player'
 
 const MainRoutes = () => {
   return (
@@ -19,6 +20,7 @@ const MainRoutes = () => {
         <Route path="/premium" element={<Premium />} />
         <Route path="/pay-premium" element={<Pay />} />
         <Route path="/music-list" element={<MusicsList />} />
+        <Route path="/music-player" element={<Player />} />
       </Routes>
     </div>
   )
