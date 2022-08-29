@@ -1,0 +1,294 @@
+.nav-back {
+  background-color: black;
+  color: #fff;
+  height: 50%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.img-iconw {
+  width: 8%;
+  height: 10%;
+  margin-left: 10%;
+  cursor: pointer;
+}
+
+.direction {
+  list-style-type: none;
+
+  display: flex;
+  justify-content: center;
+  padding: 1.8% 0 1.8% 50%;
+  font-weight: 550;
+}
+
+.dir-nav {
+  padding: 0 30% 0 30%;
+  font-size: 1.15rem;
+  cursor: pointer;
+}
+
+.dir-nav:hover {
+  color: #1ed760;
+}
+
+.info-prem {
+  background-color: rgb(153, 51, 153);
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+}
+
+.all-info-sub {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sub-info {
+  margin-bottom: 3%;
+  width: 60%;
+  font-size: 2.45rem;
+  font-weight: 700;
+}
+
+.info-buy {
+  color: #fff;
+  font-weight: 500;
+  width: 60%;
+  font-size: 1.6rem;
+  width: 70%;
+  margin-left: 10%;
+
+}
+
+.imgICON {
+  margin: 1vh 12vw 1vw 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scdn-img {
+  width: 130%;
+  height: 85%;
+}
+
+.buy-button {
+  width: 60%;
+  margin-top: 5vh;
+}
+
+.button-79 {
+  width: 15vw;
+  backface-visibility: hidden;
+  background: rgb(25, 20, 20);
+  border: 0;
+  border-radius: 28px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  font-family: Circular, Helvetica, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+  padding: 1rem 1.25rem;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transform: translateZ(0) scale(1);
+  transition: transform 0.2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-bottom: 5vh;
+}
+
+.button-79:disabled {
+  color: #787878;
+  cursor: auto;
+}
+
+.button-79:not(:disabled):hover {
+  transform: scale(1.05);
+  background-color: #000;
+}
+
+.button-79:not(:disabled):hover:active {
+  transform: scale(1.05) translateY(0.125rem);
+}
+
+.button-79:focus {
+  outline: 0 solid transparent;
+}
+
+.button-79:focus:before {
+  border-width: 0.125rem;
+  content: "";
+  left: calc(-1 * 0.375rem);
+  pointer-events: none;
+  position: absolute;
+  top: calc(-1 * 0.375rem);
+  transition: border-radius;
+  user-select: none;
+}
+
+.button-79:focus:not(:focus-visible) {
+  outline: 0 solid transparent;
+}
+
+.button-79:not(:disabled):active {
+  transform: translateY(0.125rem);
+}
+
+.infor-buys {
+  color: #fff;
+  font-size: 0.7875rem;
+}
+
+.premium-subs {
+  background-color: #fff;
+  height: 60vh;
+  width: 100%;
+}
+
+.psubs {
+  color: #000;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 6vh;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.giving-sub {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 6vh;
+}
+
+.li-give {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  list-style-type: none;
+
+}
+
+.scdn-m {
+  margin-bottom: 2vh;
+}
+
+.all-inf-crip {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 21px;
+  padding: 0px;
+  line-height: 1.3em;
+}
+
+@media screen and (min-width: 1351px) and (max-width: 1500px) {
+  .sub-info {
+    font-size: 1.6rem;
+  }
+
+  .info-buy {
+    font-size: 1rem;
+  }
+
+  .button-79 {
+    width: 32%;
+    height: 10%;
+    font-size: .7rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .scdn-img {
+    width: 90%;
+    height: 90%;
+  }
+
+  .info-prem {
+    height: 50vh;
+  }
+
+  .infor-buys {
+    padding-bottom: -10vh;
+  }
+  
+}
+
+@media screen and (min-width: 600px) and (max-width: 1350px) {
+  .dir-nav {
+    font-size: .8rem !important;
+  }
+
+
+  .sub-info {
+    font-size: .8rem;
+  }
+
+  .info-buy {
+    font-size: .6rem;
+  }
+
+  .button-79 {
+    width: 41%;
+    height: 7%;
+    font-size: .4rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .scdn-img {
+    width: 10 0%;
+    height: 80%;
+  }
+
+  .info-prem {
+    height: 40vh;
+  }
+
+  .infor-buys {
+    font-size: .4rem;
+    }
+
+  .giving-sub {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .premium-subs {
+    height: auto;
+  }
+
+  .psubs {
+    font-size: 1.8rem;
+    
+  }
+
+  .li-give {
+    margin-bottom: 5vh;
+  }
+
+  .scdn-m {
+    width: 11vw;
+    height: 9.1vh;
+  }
+
+  .all-inf-crip {
+    font-size: .8rem;
+  }
+
+  .descr-sub-premium {
+    font-size: .6rem;
+  }
+}

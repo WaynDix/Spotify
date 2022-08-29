@@ -8,7 +8,7 @@ const Album = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="card-all" onClick={() => navigate("/list-music")}>
+    <div className="card-all" onClick={() => navigate("/music-list")}>
       <img
         src="https://i.scdn.co/image/ab67706f0000000294bddc1d05920cce685229c5"
         alt="music"

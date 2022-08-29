@@ -1,11 +1,15 @@
 .wuzee-nav {
-    background: rgb(18,18,18);
-    background: linear-gradient(0deg, rgba(18,18,18,1) 10%, rgba(32,176,60,0.7) 350%);
+  background: rgb(18, 18, 18);
+  background: linear-gradient(
+    0deg,
+    rgba(18, 18, 18, 1) 10%,
+    rgba(32, 176, 60, 0.7) 350%
+  );
 }
 
 .imgIconW {
-    margin: 2% 0 0 15%;
-    opacity: 40%;
+  margin: 2% 0 0 15%;
+  opacity: 40%;
 }
 
 .text-sup {
@@ -117,6 +121,16 @@
     height: 40vh;
     cursor: pointer;
   }
+
+  .text-sup {
+    font-size: 1rem;
+    margin-left: 36%;
+  }
+
+  .text-sup2 {
+    font-size: 2rem;
+    margin-right: 9%;
+  }
 }
 
 @media screen and (max-width: 1332px) {
@@ -125,5 +139,15 @@
     justify-content: space-around;
     height: 80vh;
     cursor: pointer;
+  }
+
+  .text-sup {
+    font-size: .8rem;
+    margin-left: 42%;
+  }
+
+  .text-sup2 {
+    font-size: 1.8rem;
+    margin-left: 12%;
   }
 }

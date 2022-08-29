@@ -1,0 +1,134 @@
+.all-credit-card {
+  background-color: #fff;
+  padding: 3% 0 5% 0;
+  display: flex;
+  justify-content: center;
+}
+
+.rccs__card {
+  margin-bottom: 1%;
+}
+
+.col-sm-11 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.qwerty {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  width: 35%;
+  height: 70vh;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.rows {
+  display: flex;
+  justify-content: center;
+}
+
+.col-sm-8 {
+  margin-bottom: 1vh;
+}
+
+.card-bun-name {
+  margin-bottom: 1vh;
+}
+
+.card {
+  width: 6vw;
+  height: 1.7vw;
+  border-radius: 4px;
+  border: 1px solid #a0a0a0;
+  outline: none;
+  padding: 0.5% 1% 0.5% 2%;
+}
+
+.form-control {
+  width: 8vw;
+  height: 2vw;
+  border-radius: 4px;
+  border: 1px solid #a0a0a0;
+  outline: none;
+  padding: 0.5% 1% 0.5% 2%;
+  margin-right: 0.5vw;
+}
+
+.categori-card-name {
+  width: 15vw;
+  height: 1.7vw;
+  border: 1px solid #a0a0a0;
+  border-radius: 4px;
+  padding: 0.5% 1% 0.5% 2%;
+  outline: none;
+}
+
+.categori-card-name:focus {
+  border: 2px solid #b5b5b5;
+}
+
+.buy-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.rccs__card {
+  border-radius: 12px !important;
+}
+
+.back3 {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-image: url(https://c.tenor.com/7J5qrMbAAAYAAAAd/zero-two-dance.gif);
+  background-size: cover;
+}
+
+.rccs__card--unknown > div {
+  background-image: url(https://c.tenor.com/7J5qrMbAAAYAAAAd/zero-two-dance.gif);
+  border-radius: 14.5px;
+  background-size: cover;
+}
+
+.button-37 {
+  background-color: #13aa52;
+  border: 1px solid #13aa52;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  outline: none;
+  outline: 0;
+  padding: 10px 25px;
+  text-align: center;
+  transform: translateY(0);
+  transition: transform 150ms, box-shadow 150ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-37:hover {
+  box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+  transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+  .button-37 {
+    padding: 10px 30px;
+  }
+}

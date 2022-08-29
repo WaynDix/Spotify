@@ -95,7 +95,7 @@ function MenuBar(props) {
           </ListItemButton>
         </ListItem>
         <ListItem disablePadding>
-          <ListItemButton className="hover-cline-text">
+          <ListItemButton className="hover-cline-text" onClick={() => navigate("/premium")}>
             <DiamondIcon sx={menuIcon} className="hover-cline-text" /> Premium
           </ListItemButton>
         </ListItem>
