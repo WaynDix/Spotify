@@ -35,7 +35,7 @@ const Premium = () => {
             Отменить подписку можно в любой момент.
           </h2>
           <div className="buy-button">
-            <button class="button-79" role="button">
+            <button className="button-79" role="button" onClick={() => navigate("/pay-premium")}>
               3 месяца бесплатно
             </button>
             <p className="infor-buys">
@@ -67,7 +67,7 @@ const Premium = () => {
               />
             </div>
             <p className="all-inf-crip">Скачивайте треки</p>
-            <p>Музыка с вами даже офлайн.</p>
+            <p className="descr-sub-premium">Музыка с вами даже офлайн.</p>
           </li>
           <li className="li-give">
             <div className="not-ads">
@@ -81,7 +81,7 @@ const Premium = () => {
               />
             </div>
             <p className="all-inf-crip">Музыка без рекламы</p>
-            <p>Больше никаких перерывов.</p>
+            <p className="descr-sub-premium">Больше никаких перерывов.</p>
           </li>
           <li className="li-give">
             <div className="on-m">
@@ -95,7 +95,7 @@ const Premium = () => {
               />
             </div>
             <p className="all-inf-crip">Включайте любую музыку</p>
-            <p>И на мобильных устройствах тоже.</p>
+            <p className="descr-sub-premium">И на мобильных устройствах тоже.</p>
           </li>
           <li className="li-give">
             <div className="acces-m">
@@ -109,7 +109,7 @@ const Premium = () => {
               />
             </div>
             <p className="all-inf-crip">Пропускайте сколько хотите</p>
-            <p>Ограничений нет.</p>
+            <p className="descr-sub-premium">Ограничений нет.</p>
           </li>
         </div>
       </div>

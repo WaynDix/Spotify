@@ -5,6 +5,8 @@ import Home from './pages/Home'
 import Support from './components/Support'
 import SupportConnect from './components/SupportConnect'
 import Premium from './components/Premium'
+import Pay from './components/Pay'
+import MusicsList from './components/MusicsList'
 
 const MainRoutes = () => {
   return (
@@ -15,6 +17,8 @@ const MainRoutes = () => {
         <Route path="/support" element={<Support />} />
         <Route path="/support-connect" element={<SupportConnect />} />
         <Route path="/premium" element={<Premium />} />
+        <Route path="/pay-premium" element={<Pay />} />
+        <Route path="/music-list" element={<MusicsList />} />
       </Routes>
     </div>
   )
