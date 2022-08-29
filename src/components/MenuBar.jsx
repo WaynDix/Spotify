@@ -85,7 +85,7 @@ function MenuBar(props) {
       />
       <List>
         <ListItem disablePadding>
-          <ListItemButton className="hover-cline-text">
+          <ListItemButton className="hover-cline-text" onClick={() => navigate("/")}>
             <HomeIcon sx={menuIcon} className="hover-cline-text" /> Home
           </ListItemButton>
         </ListItem>
@@ -175,6 +175,7 @@ function MenuBar(props) {
                   }}
                   open={Boolean(anchorEl)}
                   onClose={handleClose}
+                  
                 >
                   <MenuItem onClick={handleClose}>Log out</MenuItem>
                 </Menu>

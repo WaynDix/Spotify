@@ -36,13 +36,14 @@ body {
   margin: 0% !important;
   background-color: black;
   color: white;
-  width: 9vw !important;
-  /* padding-top: 10vh !important; */
-  border: 1px solid white;
+  width: 8.9vw !important;
   overflow: hidden;
   position: relative !important;
 }
 
+.css-1poimk-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper {
+  background-color: black !important;
+}
 
 .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root{
   width: fit-content !important;

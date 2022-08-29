@@ -2,6 +2,7 @@ import React from "react";
 import "../style/music.css";
 import spotify from "../assets/icons/spotify.svg"
 
+
 const MusicsList = () => {
   return (
     <>
