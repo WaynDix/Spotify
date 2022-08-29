@@ -18,7 +18,7 @@ const Album = () => {
         <div className="name-albums">internet rewind</div>
         <div className="decr-album">
           Viral classics. Yep, we're at that stage.
-
+          {/* some comment */}
         </div>
       </div>
     </div>
