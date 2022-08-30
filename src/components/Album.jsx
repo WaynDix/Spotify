@@ -1,27 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../style/albums.css";
-import MenuBar from "./MenuBar";
+import Play from "../assets/images/play.png";
 
 const Album = () => {
-
   const navigate = useNavigate();
+  const [state, setState] = useState(false);
 
   return (
-    <div className="card-all" onClick={() => navigate("/music-list")}>
-      <img
-        src="https://i.scdn.co/image/ab67706f0000000294bddc1d05920cce685229c5"
-        alt="music"
-        className="img-icon"
-      />
-      <div className="all-decr">
-        <div className="name-albums">internet rewind</div>
-        <div className="decr-album">
-          Viral classics. Yep, we're at that stage.
-          {/* some comment */}
+    <>
+      <div
+        onMouseMove={(e) => {
+          setState(true);
+        }}
+        onMouseOut={(e) => {
+          setState(false);
+        }}
+        className="card-all"
+        onClick={() => navigate("/music-list")}
+      >
+        <img
+          src="https://i.scdn.co/image/ab67706f00000003fb1854533582c7bdc25f3da1"
+          alt="rock"
+          className="img-type"
+        />
+        <div className="album-all-name-icon">
+          <div className="type-album">Rock Roll Songs</div>
+          <div className="play-album">
+            {state && <img src={Play} alt="play" className="play-icon" />}
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
