@@ -5,15 +5,42 @@ body {
   background: #121212 !important;
 }
 
+.sidBar-menu-all {
+  display: block;
+  z-index: -1111;
+}
+
+.all-nav-menu {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 220px;
+  min-width: 220px;
+  padding-top: 24px;
+  box-sizing: border-box;
+  background-color: black;
+  color: #a7a7a7;
+  overflow: hidden;
+  position: fixed;
+  font-weight: 700;
+  z-index: -1111;
+
+}
+
 .css-12i7wg6-MuiPaper-root-MuiDrawer-paper {
   border: none !important;
+  position: absolute;
+}
 
+.css-d9ml5t-MuiDrawer-docked .MuiDrawer-paper {
+  background-color: #12121200 !important;
+  width: 0 !important;
+  position: absolute;
 }
 
 .css-d9ml5t-MuiDrawer-docked .MuiDrawer-paper {
   display: inline-block !important;
   position: absolute !important;
-
 }
 
 .auth-all {
@@ -23,15 +50,14 @@ body {
   align-items: center;
 }
 
-.css-1y207n2-MuiButtonBase-root-MuiIconButton-root{
+.css-1y207n2-MuiButtonBase-root-MuiIconButton-root {
   margin: 0% !important;
   padding: 0% !important;
   width: 9vw !important;
   height: auto;
 }
 
-
-.css-6hp17o-MuiList-root-MuiMenu-list{
+.css-6hp17o-MuiList-root-MuiMenu-list {
   padding: 0 !important;
   margin: 0% !important;
   background-color: black;
@@ -45,7 +71,7 @@ body {
   background-color: black !important;
 }
 
-.css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root{
+.css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root {
   width: fit-content !important;
   border-radius: 5px;
 }
@@ -56,4 +82,8 @@ body {
 
 .css-lopdmi-MuiPaper-root-MuiAppBar-root {
   box-shadow: none !important;
+}
+
+.ps-sp {
+  margin-bottom: 10%;
 }

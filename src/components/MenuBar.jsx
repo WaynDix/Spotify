@@ -16,6 +16,7 @@ import AddBoxIcon from "@mui/icons-material/AddBox";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import DiamondIcon from "@mui/icons-material/Diamond";
 import PrivacyTipIcon from "@mui/icons-material/PrivacyTip";
+import AddIcon from '@mui/icons-material/Add';
 import SpotifyIconMenu from "../assets/icons/SpotifyIconMenu.svg";
 import "../style/MenuBar.css";
 import AccountCircle from "@mui/icons-material/AccountCircle";
@@ -54,14 +55,6 @@ function MenuBar(props) {
     color: "gray",
   };
 
-  const backColor = {
-    background: "#000",
-    color: "#a7a7a7",
-    height: "100%",
-    fontSize: "0.875rem",
-    fontWeight: "700",
-  };
-
   const accountIcon = {
     borderRadius: "38px",
     backgroundColor: "rgba(0,0,0,.98)",
@@ -74,53 +67,68 @@ function MenuBar(props) {
   const navigate = useNavigate();
 
   const drawer = (
-    <div style={backColor}>
-      <img
-        src={SpotifyIconMenu}
-        alt=""
-        width={170}
-        height={90}
-        style={{ cursor: "pointer" }}
-        onClick={() => navigate("/")}
-      />
-      <List>
-        <ListItem disablePadding>
-          <ListItemButton className="hover-cline-text" onClick={() => navigate("/")}>
-            <HomeIcon sx={menuIcon} className="hover-cline-text" /> Home
-          </ListItemButton>
-        </ListItem>
-        <ListItem disablePadding>
-          <ListItemButton className="hover-cline-text">
-            <SearchIcon sx={menuIcon} className="hover-cline-text" /> Search
-          </ListItemButton>
-        </ListItem>
-        <ListItem disablePadding>
-          <ListItemButton className="hover-cline-text" onClick={() => navigate("/premium")}>
-            <DiamondIcon sx={menuIcon} className="hover-cline-text" /> Premium
-          </ListItemButton>
-        </ListItem>
-        <ListItem disablePadding>
-          <ListItemButton
-            className="hover-cline-text"
-            onClick={() => navigate("/support")}
-          >
-            <PrivacyTipIcon sx={menuIcon} className="hover-cline-text" />
-            Support
-          </ListItemButton>
-        </ListItem>
-        <ListItem disablePadding>
-          <ListItemButton className="hover-cline-text">
-            <AddBoxIcon sx={menuIcon} className="hover-cline-text" /> Create
-            Playlist
-          </ListItemButton>
-        </ListItem>
-        <ListItem disablePadding>
-          <ListItemButton className="hover-cline-text">
-            <FavoriteIcon sx={menuIcon} className="hover-cline-text" /> Liked
-            Songs
-          </ListItemButton>
-        </ListItem>
-      </List>
+    <div className="sidBar-menu-all">
+      <div className="all-nav-menu">
+        <img
+          src={SpotifyIconMenu}
+          alt=""
+          width={"75%"}
+          height={"10%"}
+          style={{ cursor: "pointer" }}
+          onClick={() => navigate("/")}
+        />
+        <List>
+          <ListItem disablePadding>
+            <ListItemButton
+              className="hover-cline-text"
+              onClick={() => navigate("/")}
+            >
+              <HomeIcon sx={menuIcon} className="hover-cline-text" /> Home
+            </ListItemButton>
+          </ListItem>
+
+          <ListItem disablePadding>
+            <ListItemButton className="hover-cline-text">
+              <SearchIcon sx={menuIcon} className="hover-cline-text" /> Search
+            </ListItemButton>
+          </ListItem>
+          <ListItem disablePadding>
+            <ListItemButton
+              className="hover-cline-text"
+              onClick={() => navigate("/premium")}
+            >
+              <DiamondIcon sx={menuIcon} className="hover-cline-text" /> Premium
+            </ListItemButton>
+          </ListItem>
+          <ListItem disablePadding className="ps-sp">
+            <ListItemButton
+              className="hover-cline-text"
+              onClick={() => navigate("/support")}
+            >
+              <PrivacyTipIcon sx={menuIcon} className="hover-cline-text" />
+              Support
+            </ListItemButton>
+          </ListItem>
+          <ListItem disablePadding>
+            <ListItemButton className="hover-cline-text">
+              <AddBoxIcon sx={menuIcon} className="hover-cline-text" /> Create
+              Playlist
+            </ListItemButton>
+          </ListItem>
+          <ListItem disablePadding>
+            <ListItemButton className="hover-cline-text">
+              <FavoriteIcon sx={menuIcon} className="hover-cline-text" /> Liked
+              Songs
+            </ListItemButton>
+          </ListItem>
+          <ListItem disablePadding>
+            <ListItemButton className="hover-cline-text" onClick={() => navigate("/add-song")}>
+              <AddIcon sx={menuIcon} className="hover-cline-text" />
+              Add Music
+            </ListItemButton>
+          </ListItem>
+        </List>
+      </div>
     </div>
   );
 
@@ -175,7 +183,6 @@ function MenuBar(props) {
                   }}
                   open={Boolean(anchorEl)}
                   onClose={handleClose}
-                  
                 >
                   <MenuItem onClick={handleClose}>Log out</MenuItem>
                 </Menu>

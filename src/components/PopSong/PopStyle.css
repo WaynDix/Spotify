@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+
+.dvij {
+  margin-left: 230px;
+}
+
+.razmetka {
+  color: white;
+  display: flex;
+  width: 99.4%;
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.1);
+  color: #b3b3b3;
+  height: 100%;
+  margin-bottom: 0.7vw;
+  padding-bottom: 0.5vw;
+}
+
+#number {
+  width: 3.1vw;
+  display: flex;
+  justify-content: center;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #b3b3b3;
+}
+
+#name {
+  width: auto;
+}
+
+#alb {
+  width: auto;
+  margin-left: 21.2vw;
+}
+
+.musics {
+  display: flex;
+  color: white;
+  width: 80%;
+  flex-direction: column;
+}
+
+.music {
+  width: 84.5vw;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  transition: 0.4s;
+}
+
+.music:hover {
+  background-color: rgb(19, 86, 0);
+}
+
+.mus__photo {
+  width: 40px;
+  height: 40px;
+  margin-right: 16px;
+}
+
+#alb2 {
+  width: auto;
+  padding-left: 19.5vw;
+  color: #b3b3b3;
+}
+
+.names__of__song {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+}
+
+.sub__name {
+  font-size: 10px;
+  color: rgb(147, 147, 147);
+}
+
+.back-wall {
+  background-image: url(https://assets-global.website-files.com/60a0ade9a9e15bdd6b98f68b/60cb475ccd1119672e38a8d0_pop_med1.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+
+.css-advu14-MuiPaper-root {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  z-index: 11111;
+  position: absolute;
+  margin: 0 !important;
+  border-radius: 0 !important;
+  position: fixed;
+  top: 650px !important;
+  background-color: #1a1a1a !important;
+}
