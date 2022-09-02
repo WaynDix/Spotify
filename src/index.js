@@ -4,12 +4,15 @@ import "./index.css";
 import App from "./App";
 import { BrowserRouter } from "react-router-dom";
 import ProductContextProvider from "./contexts/MusicContextProvider";
+import AuthContextProvider from "./contexts/AuthContextProvider";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
-    <ProductContextProvider>
+    {/* <ProductContextProvider> */}
+    <AuthContextProvider>
       <App />
-    </ProductContextProvider>
+    </AuthContextProvider>
+    {/* </ProductContextProvider> */}
   </BrowserRouter>
 );

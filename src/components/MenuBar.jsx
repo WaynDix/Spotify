@@ -11,12 +11,11 @@ import ListItemButton from "@mui/material/ListItemButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import HomeIcon from "@mui/icons-material/Home";
-import SearchIcon from "@mui/icons-material/Search";
+// import SearchIcon from "@mui/icons-material/Search";
 import AddBoxIcon from "@mui/icons-material/AddBox";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import DiamondIcon from "@mui/icons-material/Diamond";
 import PrivacyTipIcon from "@mui/icons-material/PrivacyTip";
-import AddIcon from '@mui/icons-material/Add';
 import SpotifyIconMenu from "../assets/icons/SpotifyIconMenu.svg";
 import "../style/MenuBar.css";
 import AccountCircle from "@mui/icons-material/AccountCircle";
@@ -25,6 +24,14 @@ import Menu from "@mui/material/Menu";
 import { useNavigate } from "react-router-dom";
 
 const drawerWidth = 240;
+const filtersSong = (searchText, listOfSong) => {
+  if (!searchText) {
+    return listOfSong;
+  }
+  return listOfSong.filter(({ song }) =>
+    song.toLowerCase().includes(searchText.toLowerCase())
+  );
+};
 function MenuBar(props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -87,11 +94,11 @@ function MenuBar(props) {
             </ListItemButton>
           </ListItem>
 
-          <ListItem disablePadding>
+          {/* <ListItem disablePadding>
             <ListItemButton className="hover-cline-text">
               <SearchIcon sx={menuIcon} className="hover-cline-text" /> Search
             </ListItemButton>
-          </ListItem>
+          </ListItem> */}
           <ListItem disablePadding>
             <ListItemButton
               className="hover-cline-text"
@@ -119,12 +126,6 @@ function MenuBar(props) {
             <ListItemButton className="hover-cline-text">
               <FavoriteIcon sx={menuIcon} className="hover-cline-text" /> Liked
               Songs
-            </ListItemButton>
-          </ListItem>
-          <ListItem disablePadding>
-            <ListItemButton className="hover-cline-text" onClick={() => navigate("/add-song")}>
-              <AddIcon sx={menuIcon} className="hover-cline-text" />
-              Add Music
             </ListItemButton>
           </ListItem>
         </List>
@@ -157,6 +158,7 @@ function MenuBar(props) {
             <MenuIcon />
           </IconButton>
           <div className="auth-all">
+
             {auth && (
               <div className="icon__auth">
                 <IconButton

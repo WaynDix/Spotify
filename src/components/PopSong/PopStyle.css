@@ -1,13 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
 
 .dvij {
-  margin-left: 230px;
+  margin-left: 260px;
+  width: 100%;
+  margin-top: 10%;
 }
 
 .razmetka {
   color: white;
   display: flex;
-  width: 99.4%;
+  width: 80%;
+  margin-top: -10%;
   border-bottom: 1px solid hsla(0, 0%, 100%, 0.1);
   color: #b3b3b3;
   height: 100%;
@@ -16,7 +19,7 @@
 }
 
 #number {
-  width: 3.1vw;
+  width: 5vw;
   display: flex;
   justify-content: center;
   font-family: "Noto Sans JP", sans-serif;
@@ -40,7 +43,7 @@
 }
 
 .music {
-  width: 84.5vw;
+  width: 100%;
   display: flex;
   align-items: center;
   height: 50px;
@@ -59,7 +62,7 @@
 
 #alb2 {
   width: auto;
-  padding-left: 19.5vw;
+  padding-left: 18.5vw;
   color: #b3b3b3;
 }
 
@@ -93,3 +96,9 @@
   top: 650px !important;
   background-color: #1a1a1a !important;
 }
+
+/* .css-1g6kzwr {
+  width: 70% !important;
+  height: 100% !important;
+  padding: 0 !important;
+} */

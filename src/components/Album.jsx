@@ -1,4 +1,3 @@
-import React from "react";
 import { useNavigate } from "react-router-dom";
 import "../style/albums.css";
 
@@ -14,7 +13,7 @@ const Album = () => {
       <div className="all-albums-cust">
         <div className="category-albums">
           <div className="category-albums-player">
-            <div className="all-massiv" onClick={() => navigate("/pop-songs")}>
+            <div className="all-massiv" onClick={() => navigate("/pop")}>
               <div className="descr-album">
                 <span className="descr-album-name">Pop</span>
               </div>
